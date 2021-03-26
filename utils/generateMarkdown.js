@@ -15,27 +15,32 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
     return `
     
-    # ${data.title}
+    # ${data.Title}
     ![npm](https://img.shields.io/npm/v/inquirer?style=plastic)
+    
     ## Description
     ${data.description}
+    
     ## Table of Contents
+    * [Description](##Description)
     * [Installation](#installation)
     * [Usage](#usage)
-    * [License](#license)
     * [Contributing](#contributing)
     * [Tests](#tests)
+    * [License](#license)
     * [Questions](#questions)
+    
+    ## Description
+    ${data.description}
+    \`\`\`
     ## Installation
-    To install, please run the following command in terminal:
-      
+    To install, please run the following command in terminal: 
     \`\`\`
     ${data.installCode}
     \`\`\`
-    ## Usage
+    ## Usage Information
     ${data.usage}
-    ## License
-    This project is licensed under the ${data.license} license.
+    
     ## Contributing
     ${data.contribution}
     ## Tests
@@ -43,8 +48,14 @@ function generateMarkdown(data) {
     \`\`\`
     ${data.tests}
     \`\`\`
+
+    ## License
+    This project is licensed under the ${data.license} license.
+
     ## Questions
-    If you have any questions about the repo, open an issue or contact [${data.username}](github.com/${data.username}) directly at [${data.email}](mailto:${data.email}).
+    Questions? Reach out to me! [${data.email}](mailto:${data.email})
+    
+    Want to check out the Repo?[${data.username}](github.com/${data.username})
     `;
     }
     // Object used to store method to be used in index.js file
