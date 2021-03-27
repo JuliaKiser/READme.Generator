@@ -36,12 +36,22 @@ const questions = [
         message: 'To run tests, enter the following command',
         default: 'npm run test',
     },
-    // {
-    //     type: 'list',
-    //     name: 'license',
-    //     message: 'What license is this project under?',
-
-    // }
+    {
+        type: 'list',
+        name: 'license',
+        message: 'What license is this project under?',
+        choices: ["Github", "PyPI", "Apache", "GPLv3"],
+    },
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email',
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'username',
+    }
 ];
 
 function writeToFile(fileName, data) {
