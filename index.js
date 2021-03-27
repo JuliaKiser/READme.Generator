@@ -41,6 +41,24 @@ const questions = [
         name: 'license',
         message: 'What license is this project under?',
 
-
     }
-]
+];
+
+function writeToFile(fileName, data) {
+
+    fs.writeFile(fileName, generateMarkdown(data), (err) =>
+            err ? console.error(err) : console.log('SUCCESSFUL')
+        );
+}
+
+// TODO: Create a function to initialize app
+function init() {
+    inquirer
+        .prompt(questions).then((response) => {
+                writeToFile("README.md", response)}
+            
+        )
+}
+
+// This will initialize the function
+init();
