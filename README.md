@@ -11,7 +11,7 @@
 7. [Questions](#questions)
     
 ## Description
-This project creates a simple readme file
+This project allows the user to create a simple readme generator
     
 ## Installation
 If you wish to install, please run the following command in your terminal
@@ -20,10 +20,10 @@ If you wish to install, please run the following command in your terminal
 npm i
     
 ## Usage Information
-0
+00
     
 ## Contributing
-there were 20 contributions made
+There were 30 contributions made
 
 ## Tests
 To test installation, run the following command in terminal:
