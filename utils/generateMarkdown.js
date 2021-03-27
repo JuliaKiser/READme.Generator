@@ -18,9 +18,6 @@ function generateMarkdown(data) {
     # ${data.Title}
     ![npm](https://img.shields.io/npm/v/inquirer?style=plastic)
     
-    ## Description
-    ${data.description}
-    
     ## Table of Contents
     * [Description](##Description)
     * [Installation](#installation)
@@ -32,9 +29,9 @@ function generateMarkdown(data) {
     
     ## Description
     ${data.description}
-    \`\`\`
+    
     ## Installation
-    To install, please run the following command in terminal: 
+    If you wish to install, please run the following command in your terminal
     \`\`\`
     ${data.installCode}
     \`\`\`
@@ -43,6 +40,7 @@ function generateMarkdown(data) {
     
     ## Contributing
     ${data.contribution}
+
     ## Tests
     To test installation, run the following command in terminal:
     \`\`\`
@@ -58,6 +56,6 @@ function generateMarkdown(data) {
     Want to check out the Repo?[${data.username}](github.com/${data.username})
     `;
     }
-    // Object used to store method to be used in index.js file
+    // Object used to store method used in index.js file
     module.exports = generateMarkdown;
 
