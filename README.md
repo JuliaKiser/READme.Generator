@@ -1,4 +1,4 @@
- # Julia Kiser
+ # Readme Generator
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) 
 
 ## Table of Contents
@@ -11,7 +11,7 @@
 7. [Questions](#questions)
     
 ## Description
-Julia Kiser
+This project creates a simple readme file
     
 ## Installation
 If you wish to install, please run the following command in your terminal
@@ -20,10 +20,10 @@ If you wish to install, please run the following command in your terminal
 npm i
     
 ## Usage Information
-1000sdef
+0
     
 ## Contributing
-1000
+there were 20 contributions made
 
 ## Tests
 To test installation, run the following command in terminal:
@@ -35,5 +35,10 @@ npm run test
 ## Questions
 Questions? Reach out to me! [jdkiser228@gmail.com](mailto:jdkiser228@gmail.com)
     
-Want to check out the Repo?[julia-kiser](github.com/julia-kiser)
-    
+Want to check out the Repo?[JuliaKiser](github.com/JuliaKiser)
+   
+## Gif Clip
+![ReadMe Demo](images/generator.gif)
+
+## Link to Video
+[Video Link]("https://www.youtube.com/embed/6dME4rkaoxg")

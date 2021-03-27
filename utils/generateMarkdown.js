@@ -66,7 +66,13 @@ ${data.tests}
 Questions? Reach out to me! [${data.email}](mailto:${data.email})
     
 Want to check out the Repo?[${data.username}](github.com/${data.username})
-    `;
+   
+## Gif Clip
+![ReadMe Demo](images/generator.gif)
+
+## Link to Video
+[Video Link]("https://www.youtube.com/embed/6dME4rkaoxg")
+`;
 }
 // Object used to store method used in index.js file
 module.exports = generateMarkdown;
