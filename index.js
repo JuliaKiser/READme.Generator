@@ -36,12 +36,12 @@ const questions = [
         message: 'To run tests, enter the following command',
         default: 'npm run test',
     },
-    {
-        type: 'list',
-        name: 'license',
-        message: 'What license is this project under?',
+    // {
+    //     type: 'list',
+    //     name: 'license',
+    //     message: 'What license is this project under?',
 
-    }
+    // }
 ];
 
 function writeToFile(fileName, data) {

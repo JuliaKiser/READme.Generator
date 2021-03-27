@@ -16,16 +16,15 @@ function generateMarkdown(data) {
     return `
     
     # ${data.Title}
-    ![npm](https://img.shields.io/npm/v/inquirer?style=plastic)
-    
+
     ## Table of Contents
-    * [Description](##Description)
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [License](#license)
-    * [Questions](#questions)
+    *[Description](##Description)
+    *[Installation](#installation)
+    *[Usage](#usage)
+    *[Contributing](#contributing)
+    *[Tests](#tests)
+    *[License](#license)
+    *[Questions](#questions)
     
     ## Description
     ${data.description}
