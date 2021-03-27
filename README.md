@@ -1,16 +1,17 @@
  # sdf
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)"    
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) 
 
 ## Table of Contents
-    * Description
-    * Installation
-    * Usage
-    * Contributing
-    * Tests
-    * License
-    * Questions
+1. [Description](##Description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [Tests](#tests)
+6. [License](#license)
+7. [Questions](#questions)
     
-## sdf
+## Description
+sdf
     
 ## Installation
 If you wish to install, please run the following command in your terminal
