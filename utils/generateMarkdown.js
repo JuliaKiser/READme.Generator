@@ -4,8 +4,6 @@ function renderLicenseBadge(license) {
     switch (license) {
         case "Github": return "[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)"    
         case "PyPI" : return "[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)"
-        case "Apache" : return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-        case "GPLv3" : return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
       } 
     };
 
@@ -13,18 +11,17 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 switch (license) {
-    case "Github" : return"[Github license](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)"      
+    case "Github" : return"[Github](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)"      
     case "PyPI" : return "[PyPI](https://pypi.python.org/pypi/ansicolortags/)"
-    case "Apache" : return "[Apache](https://opensource.org/licenses/Apache-2.0)"
-    case "GPLv3" : return "[GPL v3](https://www.gnu.org/licenses/gpl-3.0)"
 }
 };
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-    return license 
-};
+    return license ? `## License
+   This project is licensed under the ${renderLicenseLink(license)} license.` : "";
+  }
    
 
 
@@ -34,6 +31,7 @@ function generateMarkdown(data) {
     return `
     
     # ${data.Title}
+    ${renderLicenseBadge(license)}
 
     ## Table of Contents
     *[Description](##Description)
@@ -64,8 +62,8 @@ function generateMarkdown(data) {
     ${data.tests}
     \`\`\`
 
-    ## License
-    This project is licensed under the ${renderLicenseLink(license)} license.
+
+## License
 
     ## Questions
     Questions? Reach out to me! [${data.email}](mailto:${data.email})

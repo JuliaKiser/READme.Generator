@@ -40,6 +40,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license is this project under?',
+        default: 'Github',
         choices: ["Github", "PyPI", "Apache", "GPLv3"],
     },
     {
