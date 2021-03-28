@@ -9,7 +9,7 @@ function generateMarkdown(data) {
 1. [Description](##Description)
 2. [Installation](##installation)
 3. [Usage](##usage)
-4. [Contributing](#contributing)
+4. [Contributing](##contributing)
 5. [Tests](##tests)
 6. [License](##license)
 7. [Questions](##questions)
@@ -23,7 +23,7 @@ If you wish to install, please run the following command in your terminal
  
 ${data.installCode}
     
-## Usage Information
+## Usage
 ${data.usage}
     
 ## Contributing
