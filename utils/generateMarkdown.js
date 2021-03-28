@@ -1,45 +1,18 @@
-// // TUTOR HAD SOMETHING COME UP AND WAS GOING TO WORK ON THIS WITH ME, COULDNT FIGURE IT OUT
-// TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(license) {
-//     switch (license) {
-//         case "Github": return "[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)"    
-//         case "PyPI" : return "[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)"
-//       } 
-//     };
-
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink (license) {
-// switch (license) {
-//     case "Github" : return"[Github](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)"      
-//     case "PyPI" : return "[PyPI](https://pypi.python.org/pypi/ansicolortags/)"
-// }
-// };
-
-// // TODO: Create a function that returns the license section of README
-// // If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//     return license `# license
-//     This project is licensed under the ${renderLicenseLink(license)} license.`;
-//   }
-
-
 
 // create function to generate markdown
 
 function generateMarkdown(data) {
     return ` # ${data.Title}
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) 
+![GitHub license](https://img.shields.io/badge/license-${data.license}-blue.svg)
 
 ## Table of Contents
 1. [Description](##Description)
-2. [Installation](#installation)
-3. [Usage](#usage)
+2. [Installation](##installation)
+3. [Usage](##usage)
 4. [Contributing](#contributing)
-5. [Tests](#tests)
-6. [License](#license)
-7. [Questions](#questions)
+5. [Tests](##tests)
+6. [License](##license)
+7. [Questions](##questions)
     
 ## Description
 ${data.description}
@@ -61,7 +34,8 @@ To test installation, run the following command in terminal:
   
 ${data.tests}
 
-
+## License
+This application was created using: ${data.license} License
 
 ## Questions
 Questions? Reach out to me! [${data.email}](mailto:${data.email})
